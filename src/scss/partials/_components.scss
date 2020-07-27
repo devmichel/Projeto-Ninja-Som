@@ -1,0 +1,191 @@
+// Input search do Header-white
+.inputSearch {
+    width: 340px;
+    height: 41px;
+    border-radius: 5px;
+    border: .5px solid $blue;
+    opacity: .5;
+    padding: 7px 45px 7px 20px;
+    font-size: 16px;
+    color: $blue;
+
+    &:focus {
+        outline-color: $blue;
+    }
+}
+::-webkit-input-placeholder{
+    font-size: 9px;
+}
+
+// Conf padrao das setas
+.setas-padrao {
+    border: 1px solid transparent;
+    border-radius: 10px;
+    background: none;
+    outline: none;
+    cursor: pointer;
+}
+
+// Setas do slider 
+.setas button {
+    @extend .setas-padrao;
+    padding: 30px 20px;
+    position: absolute;
+    top: 200px;
+    z-index: 4;
+
+    &:hover {
+        border-color: $white;
+    }
+}
+#setaLeft {
+    left: 40px;
+}
+#setaRight {
+    right: 40px;
+}
+
+// button padrão 
+.btn-padrao {
+    width: 145px;
+    height: 45px;
+    font-size: 13px;
+    background: none;
+    outline: none;
+    border-radius: 5px;
+    cursor: pointer;
+    border: 1px solid;
+}
+// btn-slider do group-slider do banner
+.btn-slider {
+    @extend .btn-padrao;
+    color: $white;
+    border-radius: 0;
+    width: inherit;
+    border-color: transparent;
+    border-bottom: 1px solid $white;
+
+    &:hover {
+        transition: .3s;
+        width: 145px;
+        border-radius: 5px;
+        border: 1px solid $white;
+    }
+}
+
+//btn-action do group-action do callAction
+.btn-action {
+    @extend .btn-padrao;
+    border-color: $white;
+    color: $white;
+
+    &:hover {
+        background-color: $white;
+        color: $blue;
+        border-color: $blue;
+        transition: .3s;
+    }
+}
+
+//btn-highlights do highlights
+.btn-highlights {
+    @extend .btn-padrao;
+    color: $blue;
+    border-color: $blue;
+
+    &:hover {
+        color: $white;
+        background-color: $blue;
+        transition: .3s;
+    }
+}
+
+//Setas brands 
+
+.setasBrands button {
+    @extend .setas-padrao;
+    position: absolute;
+    padding: 15px 15px;
+    
+    img {
+        width: 15px;
+    }
+    &:hover {
+        border-color: $blue;
+    }
+}
+#setaLeftBrands {
+    left: 5%;
+}
+#setaRightBrands {
+    right: 5%;
+}
+
+// setas div comment 
+.setasComments button {
+    @extend .setas-padrao;
+    padding: 10px 10px;
+    position: absolute;
+    top: 70px;
+
+    img {
+        width: 10px;
+    }
+    &:hover {
+        border-color: $blue; 
+    }
+}
+#setaRightComments {
+    right: 50px;
+}
+#setaLeftComments {
+    left: 50px;
+}
+
+// input do form, do footer-blue
+
+.input-form {
+    margin-bottom: 20px;
+    padding: 10px 10px;
+    width: 222px;
+    height: 45px;
+    border: none;
+    background: none;
+    border-bottom: 1px solid $blue;
+    outline: none;
+}
+
+//btn-form do form do footer-blue
+.btn-form {
+    @extend .btn-padrao;
+    width: 110px;
+    height: 35px;
+    color: $blue;
+    border-color: $blue;
+    
+    &:hover {
+        background: $blue;
+        color: $white;
+        border-color: $white;
+        transition: .3s;
+    }
+}
+
+// btn-modal de adiconar produto ao carrinho
+.btn-modal {
+    @extend .btn-padrao;
+    width: 164px;
+    height: 40px;
+    background: $blue;
+    color: $white;
+}
+#btn-close-modal {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 15px; 
+    border: none;
+    background: none;
+    cursor: pointer;
+    outline: none;
+}

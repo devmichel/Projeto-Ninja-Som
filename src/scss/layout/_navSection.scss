@@ -1,0 +1,37 @@
+.navSection {
+    background-color: $white;
+    text-align: center;
+
+    .row {
+        height: 210px;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .navSectionCard {
+        opacity: .5;
+        transition: .3s;
+
+         &:hover {
+             transition: .3s;
+             opacity: 1;
+
+             img {
+                border-color: $blue;
+             }
+         }
+        a {
+            text-decoration: none;
+        }
+        img {
+            width: 106px;
+            margin-bottom: 19px;
+            border-radius: 50%;
+            border: 1px solid transparent;
+            padding: 7px;
+        }
+        h6 {
+            font-size: 16px;
+            color: $blue;
+        }
+    }
+}

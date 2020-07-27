@@ -1,0 +1,93 @@
+// modal
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, .7);
+    z-index: 100;
+    display: none;
+    justify-content: center;
+    align-items: center;
+
+    .modal-box {
+        width: 770px;
+        height: 353px;
+        padding: 45px;
+        background-color: $white;
+        border-radius: 5px;
+        display: flex;
+        position: relative;
+        z-index: 1000;
+
+        img {
+            width: 335px;
+        }
+        .infor {
+            color: $blue; 
+            margin-left: 20px;
+
+            h4 {
+                font-size: 20px;
+                font-weight: 400;
+                margin-bottom: 21px;
+            }
+            h6 {
+                font-size: 20px;
+                font-weight: 900;
+                margin-bottom: 20px;
+            }
+            p {
+                font-size: 10px;
+                margin-bottom: 20px;
+            }
+            a {
+                font-size: 12px;
+                color: $blue;
+
+                img {
+                    position: relative;
+                    top: 2px;
+                    left: 4px;
+                }
+            }
+            img {
+                width: 7px;
+            }
+            button {
+                margin-top: 25px;
+
+                &:hover {
+                    opacity: .7;
+                }
+            }
+        }
+        #btn-close-modal {
+            img {
+                width: 16px;
+            }
+        }
+    }
+}
+
+// Animação Modal
+
+@keyframes modal {
+    from {
+        opacity: 0;
+        transform: translate(0, -150px);
+    }
+    to {
+        opacity: 1;
+        transform: translate(0 , 0);
+    }
+}
+
+// Modal ativo
+.modal.active {
+    display: flex;
+}
+.modal-box.show {
+    animation: modal .5s;
+}

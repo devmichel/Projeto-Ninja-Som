@@ -1,0 +1,98 @@
+// footer-blue 
+.footer-blue {
+    background: $blue;
+    color: $white;
+    
+    .row {
+        height: 389px;
+        align-items: center;
+        justify-content: space-between;
+    }
+    h3 {
+        font-size: 14px;
+        font-weight: $bold;
+        margin-top: 30px;
+        margin-bottom: 20px;
+    }
+    h5 {
+        font-size: 12px;
+        font-weight: 500;
+        margin-bottom: 8px;
+    }
+    a {
+        color: $white;
+        text-decoration: none;
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+    .suport {
+        margin-bottom: 42px;
+    }
+    .socials {
+        display: flex;
+
+        img {
+            width: 20px;
+        }
+        img.face {
+            width: 12px;
+        }
+        a{
+            margin-right: 17px;
+        }
+    }
+    .pag {
+        img {
+            width: 109px;
+        }
+    }
+    .seg {
+        img {
+            width: 58px;
+        }
+        img.seg2 {
+            width: 47px;
+        }
+    }
+    .newsletter {
+        width: 276px;
+        height: 249px;
+        border-radius: 5px;
+        background: $white;
+        box-shadow: 0 0 5px rgba(0, 0, 0, .7);
+        padding: 28px;
+        color: $blue;
+
+        h3 {
+            margin: 0;
+        }
+        span {
+            font-weight: 900;
+        }
+        input {
+            margin-bottom: 20px;
+        }
+    }
+}
+
+// footer-white 
+
+.footer-white {
+    background: white;
+     
+    .row {
+         height: 62px;
+         justify-content: space-around;
+         align-items: center;
+     }
+     p {
+         color: $blue;
+         font-size: 10px;
+     }
+     img {
+         width: 84px;
+         margin-right: 15px;
+     }
+}

@@ -1,0 +1,45 @@
+.brands {
+    margin-top: 100px;
+    text-align: center;
+    position: relative;
+
+    .row {
+        justify-content: center;
+    }
+    .group-text {
+        margin: 0 auto;
+
+        h1 {
+            font-size: 25px;
+            color: $blue;
+            font-weight: normal;
+            margin-bottom: 15px;
+
+            span {
+                font-weight: $bold;
+            }
+        }
+        p {
+            font-size: 16px;
+            color: $blue;
+            margin-bottom: 78px;
+        }
+    }
+    #carousel {
+        ul {
+            display: flex;
+        }
+        li {
+            margin: 0 20px;
+        }
+        img {
+            width: 200px;
+            opacity: .3;
+            cursor: pointer;
+
+            &:hover {
+                opacity: 1;
+            }
+        }
+    }
+}
